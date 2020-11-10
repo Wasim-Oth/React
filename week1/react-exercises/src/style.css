@@ -1,0 +1,15 @@
+
+.Guarantee{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.Guarantee :first-child{
+    margin-top: 1.8rem;
+}
+.Guarantee :last-child{
+    margin-top: -0.5rem;
+}
