@@ -20,6 +20,7 @@ const DogGallery = () => {
 
     return(
         <div>
+            <h1>Exercise 2: Dog photo gallery</h1>
             <Button fetch= {getDogPhoto} />
             <DogPhoto props= {{
                 dogPhotos: dogPhotos,
@@ -35,7 +36,7 @@ const DogPhoto = ({props}) => {
         <div>
             {props.loading && <h4> Loading...</h4>}
             {props.Error && <h2> Sorry! we were not able to process your request </h2>}
-            { (!props.Error && props.dogPhotos.length === 0) && <h2> Get your first dog by clicking the button! </h2> } 
+            { (!props.Error && props.dogPhotos.length === 0) && <h3> Get your first dog by clicking the button! </h3> } 
             { (!props.Error && props.dogPhotos)  && props.dogPhotos.map((dog, index) => <img src={dog} key={index} alt='dog' />) }
         </div>
     )

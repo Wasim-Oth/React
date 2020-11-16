@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
  const Friend = () => {
@@ -18,6 +17,7 @@ import React, { useState } from 'react';
 
  return (
      <div>
+         <h1>Exercise 1: New friend on demand</h1>
         <Button fetch= {GetFriend} />
         <FriendProfile friendProps= {{
             friend: friend,

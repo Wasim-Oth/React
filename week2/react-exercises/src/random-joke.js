@@ -40,6 +40,7 @@ const RandomJoke = () => {
 const Joke = ({props}) => {
     return (
         <div>
+            <h1>Exercise 3: Random Joke Generator</h1>
             {props.loading && <h4>Loeading...</h4>}
             {props.error 
              ? <h2> Sorry! we were not able to process your request </h2> 
