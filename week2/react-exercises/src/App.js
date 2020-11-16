@@ -1,4 +1,5 @@
-import Friend from './new-friend'
+import Friend from './new-friend';
+import DogGallery from './dog-photo';
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
      <Friend />
      <hr></hr>
+     <DogGallery/>
     </div>
   );
 }
