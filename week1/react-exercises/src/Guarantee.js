@@ -1,10 +1,10 @@
 function Guarantee (props){
-
+    const {mode,source, name, description } = props;
     return (
         <div>
-            <img alt={props.mode} src={props.source} />
-             <h3>{props.name}</h3>
-             <p>{props.description}</p>
+            <img alt={mode} src={source} />
+             <h3>{name}</h3>
+             <p>{description}</p>
          </div>
     )
 }

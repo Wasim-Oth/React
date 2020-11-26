@@ -6,7 +6,7 @@ const [count, setCount] = useState(0);
 function incremntCount() {
     setCount (count + 1)
 }
-let feedback = count > 10 ? "It's higher than 10!" : "Keep counting...";
+const feedback = count > 10 ? "It's higher than 10!" : "Keep counting...";
 return (
     <div>
         <Button increment = {incremntCount}/>
@@ -16,12 +16,12 @@ return (
 )
 };
 
-function Count(props) {
-    return <h2>{props.currentNumber}</h2>;
+function Count({currentNumber}) {
+    return <h2>{currentNumber}</h2>;
 };
 
-function Button(props) {
-    return <button onClick= {props.increment}> add 1 </button>
+function Button({increment}) {
+    return <button onClick= {increment}> add 1 </button>
 };
 
 export default Counter;
