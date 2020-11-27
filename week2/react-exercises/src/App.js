@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
      <Friend />
-     <hr></hr>
+     <hr/>
      <RandomJoke/>
-     <hr></hr>
+     <hr/>
      <DogGallery/>
     </div>
   );
