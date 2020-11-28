@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Search from "./Search";
+import Search from "./search";
 import CityDetails from "./cityDetails";
 
 const CityWeather = () => {
