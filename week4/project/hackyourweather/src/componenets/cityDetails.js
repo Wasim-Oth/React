@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const CityDetails = ({ props }) => {
   const { city, deleteCity, cityKey } = props;
   const icon = city.weather[0].icon;
+  const id =city.id
+ 
 
   return (
     <div className="container">
@@ -24,7 +27,9 @@ const CityDetails = ({ props }) => {
         </div>
 
         <h2>
+        <Link to={`/${id}`}>
           {city.name}, {city.sys.country}
+        </Link>
         </h2>
         <h3> {city.weather[0].main} </h3>
         <p> {city.weather[0].description} </p>
