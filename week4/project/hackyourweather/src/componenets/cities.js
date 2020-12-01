@@ -39,8 +39,8 @@ const CityWeather = () => {
     const newCityWeather = [...cityWeather];
     newCityWeather.splice(key - 1, 1);
     setCityWeather(newCityWeather);
-    console.log(key);
   };
+
 
   return (
     <div>
